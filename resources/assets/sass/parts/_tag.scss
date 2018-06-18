@@ -1,0 +1,36 @@
+.post_tag_wrapper, .tag_wrapper {
+  display: block;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  div {
+    display: inline-block;
+    padding: 5px;
+    background-color: $background-grey;
+
+    &.tag_name {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &.add_post_tag{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        i {
+          transform: rotate(360deg);
+        }
+      }
+
+      i {
+        transition: all 1s ease;
+      }
+    }
+  }
+}
+
+.added_tag {
+  display: block;
+}

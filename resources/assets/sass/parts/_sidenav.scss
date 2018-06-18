@@ -1,0 +1,58 @@
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $main-color;
+  overflow-x: hidden;
+  color: $secondary-color;
+
+  .user_info{
+    padding: 40px 40px 10px 40px;
+    border-bottom: 1px solid #818181;
+
+    img {
+      max-width: 100%;
+    }
+
+    .user_name {
+      margin-top: 20px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+
+  a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    color: $grey;
+    display: block;
+    font-size: 14px;
+
+    .link-icon {
+      padding-right: 10px;
+    }
+
+    &.logout {
+      background-color: $secondary-color;
+      border-bottom: none;
+
+      &:hover{
+        color: $grey;
+      }
+    }
+
+    &:hover,
+    .active {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

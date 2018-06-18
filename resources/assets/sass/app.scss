@@ -1,0 +1,51 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Other
+@import 'parts/sidenav';
+@import 'parts/tag';
+@import 'parts/suggestions';
+
+// Pages
+@import "pages/study";
+@import "pages/interest";
+@import "pages/studies";
+
+// Posts
+
+@import "posts/detail";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  &.guest {
+    background-color: $main-color;
+  }
+}
+
+main {
+  padding: 20px;
+
+  &.logged-in {
+    margin-left: 220px;
+  }
+}
+
+.login-page,
+.register_page {
+
+  .btn {
+    background-color: $main-color;
+    border: none;
+  }
+}
